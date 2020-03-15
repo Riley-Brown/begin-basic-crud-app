@@ -10,7 +10,8 @@ exports.handler = async function getRepos() {
   return {
     statusCode: 201,
     headers: {
-      "Cache-Control": "max-age=3600"
+      "Cache-Control": "max-age=3600",
+      "Access-Control-Allow-Origin": "https://riley.gg"
     },
     body: JSON.stringify({
       reposJson
